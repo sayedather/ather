@@ -1,0 +1,21 @@
+services:
+    ather.applicationform.main.controller:
+        class: ather\applicationform\controller\main_controller
+        arguments:
+            - @config
+            - @dbal.conn
+            - @controller.helper
+            - @request
+            - @template
+            - @user
+            - %core.root_path%
+            - %core.php_ext%
+    ather.applicationform.listener:
+        class: ather\applicationform\event\listener
+        arguments:
+            - @controller.helper
+            - @template
+            - @user
+            - @auth
+        tags:
+            - { name: event.listener }

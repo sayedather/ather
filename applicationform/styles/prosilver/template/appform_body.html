@@ -1,0 +1,74 @@
+<!-- INCLUDE overall_header.html -->
+<form method="post" id="appform"> 
+	<div class="panel">
+		<div class="inner">
+			<h2>{L_APPLICATION_PAGETITLE}</h2>
+			<p>{L_APPLICATION_WELCOME_MESSAGE}</p>
+			<fieldset class="fields2">
+				<dl>
+					<dt><label for="name">Name: </label></dt>
+					<dd><input type="text" name="name" class="inputbox autowidth" /></dd>
+				</dl>
+				<dl>
+					<dt><label for="xboxtag">Xbox Gamertag: </label></dt>
+					<dd><input type="text" name="xboxtag" class="inputbox autowidth" /></dd>
+				</dl>
+				<dl>
+					<dt><label for="location">Location: </label></dt>
+					<dd><input type="text" name="location" class="inputbox autowidth" /></dd>
+				</dl>
+				<dl>
+					<dt><label for="timezone">Timezone: </label></dt>
+					<dd><input type="text" name="timezone" class="inputbox autowidth" /></dd>
+				</dl>
+				
+				<dl>
+					<dt><label for="age">Age: </label></dt>
+					<dd><input type="text" name="age" class="inputbox autowidth" /></dd>
+				</dl>
+				
+				<dl>
+					<dt><label for="how_long">How long playing World of Tanks? </label></dt>
+					<dd><input type="text" name="how_long" class="inputbox autowidth" /></dd>
+				</dl>
+				
+				<dl>
+					<dt><label for="prev_exp">Previous Clan Experience? </label></dt>
+					<dd><input type="text" name="prev_exp" class="inputbox autowidth" /></dd>
+				</dl>
+				
+				<dl>
+					<dt><label for="which_clan">Which Clan? </label></dt>
+					<dd><input type="text" name="which_clan" class="inputbox autowidth" /></dd>
+				</dl>
+				
+				<dl>
+					<dt><label for="why_lowe">Why Lowe? </label></dt>
+					<dd><input type="text" name="why_lowe" class="inputbox autowidth" /></dd>
+				</dl>
+				
+				<dl>
+					<dt><label for="how_hear">How did you hear about us? </label></dt>
+					<dd><input type="text" name="how_hear" class="inputbox autowidth" /></dd>
+				</dl>
+				
+				<dl>
+					<dt><label for="other_titles">What other Xbox titles do you play? </label></dt>
+					<dd><input type="text" name="other_titles" class="inputbox autowidth" /></dd>
+				</dl>
+				
+			</fieldset>
+		</div>
+	</div>
+
+	<div class="panel bg2">
+		<div class="inner">
+		<fieldset class="submit-buttons">
+			<input type="submit" name="submit" id="submit" value="{L_SUBMIT}" class="button1" />		
+			{S_FORM_TOKEN}
+		</fieldset>
+		</div>
+	</div>
+</form>
+
+<!-- INCLUDE overall_footer.html --> 
